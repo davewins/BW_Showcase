@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_RhoqMIHQEeep0oJQMD38Og" targetNamespace="http://tns.tibco.com/bw/composite/Showcase_Patterns.module" name="Showcase_Patterns.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_RhoqMIHQEeep0oJQMD38Og" targetNamespace="http://tns.tibco.com/bw/composite/Showcase_Patterns.module" name="Showcase_Patterns.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
   <sca:property xmi:id="_SBi5UIHQEeep0oJQMD38Og" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_SBqOEIHQEeep0oJQMD38Og" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_SBtRYIHQEeep0oJQMD38Og" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
@@ -9,4 +9,9 @@
   <sca:property xmi:id="_SB6FsIHQEeep0oJQMD38Og" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_SB9JAIHQEeep0oJQMD38Og" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_SCAzYIHQEeep0oJQMD38Og" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_VBta8I2SEeerq9_VB1U2LA" name="/FileProperties/PollingDirectory" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Jl6QkI2TEeerq9_VB1U2LA" name="/FileProperties/TransferDirectory" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_Ox7e8I2SEeerq9_VB1U2LA" name="ComponentFile_Transfer" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Ox7e8Y2SEeerq9_VB1U2LA" processName="showcase_patterns.module.integration_styles.File_Transfer"/>
+  </sca:component>
 </sca:composite>

@@ -827,10 +827,10 @@
                                 <properties name="config" xsi:type="activityconfig:EMFProperty">
                                     <type href="http://ns.tibco.com/bw/palette/generalactivities#//Timer"/>
                                     <value
-                                    endTime="2017-08-06T17:11:46.992-0500"
+                                    endTime="2017-08-06T23:11:46.992+0100"
                                     intervalUnit="Second"
                                     runOnce="true"
-                                    startTime="2017-08-06T17:11:46.992-0500"
+                                    startTime="2017-08-06T23:11:46.992+0100"
                                     timeInterval="1" xsi:type="generalactivities:Timer"/>
                                 </properties>
                             </activityConfig>

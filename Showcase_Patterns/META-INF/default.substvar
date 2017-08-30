@@ -73,5 +73,21 @@
 			<type>String</type>
 			<isOverride>false</isOverride>
 		</globalVariable>
+		<globalVariable>
+			<name>//Showcase_Patterns.module///FileProperties/PollingDirectory</name>
+			<value>/Users/davidwinstone/Files/*.*</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+		</globalVariable>
+		<globalVariable>
+			<name>//Showcase_Patterns.module///FileProperties/TransferDirectory</name>
+			<value>/Users/davidwinstone/Transfers/</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+		</globalVariable>
 	</globalVariables>
 </repository>
