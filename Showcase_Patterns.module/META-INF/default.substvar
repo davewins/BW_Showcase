@@ -89,5 +89,21 @@
 			<type>String</type>
 			<isOverride>false</isOverride>
 		</globalVariable>
+		<globalVariable>
+			<name>/MySQLProperties/UserName</name>
+			<value>bw_showcase</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+		</globalVariable>
+		<globalVariable>
+			<name>/MySQLProperties/Password</name>
+			<value>#!S9l5o0bnSF806SeTMkjacNcpz1gjHBaHVo2FcsGGziU=</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Password</type>
+			<isOverride>false</isOverride>
+		</globalVariable>
 	</globalVariables>
 </repository>
