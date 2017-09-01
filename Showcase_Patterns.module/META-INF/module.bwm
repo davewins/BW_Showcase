@@ -22,4 +22,10 @@
   <sca:component xmi:id="_A0hyII2hEeeSZ9wBu-GNFQ" name="ComponentShared_Database_Application_Reader" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_A0hyIY2hEeeSZ9wBu-GNFQ" processName="showcase_patterns.module.integration_styles.Shared_Database_Application_Reader"/>
   </sca:component>
+  <sca:component xmi:id="_2urjcI5kEeeqeseqwyVOmw" name="ComponentMessaging_Application_Sender" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_2urjcY5kEeeqeseqwyVOmw" processName="showcase_patterns.module.integration_styles.Messaging_Application_Sender"/>
+  </sca:component>
+  <sca:component xmi:id="_5TJrUI5kEeeqeseqwyVOmw" name="ComponentMessaging_Application_Receiver" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_5TJrUY5kEeeqeseqwyVOmw" processName="showcase_patterns.module.integration_styles.Messaging_Application_Receiver"/>
+  </sca:component>
 </sca:composite>
