@@ -1,0 +1,457 @@
+{
+  "name": "_default_realm",
+  "id": 1055,
+  "description": "",
+  "version": 1,
+  "realm_server_version": "5.2.1   V4",
+  "realm_uuid": "6de85a75-1388-4ef7-8cb4-b37fc92fc29c",
+  "server_uuid": "868c9283-e602-429e-8382-dd40044c9944",
+  "server_time": "",
+  "properties": {
+    "client_monitor_sample_interval": 60,
+    "client_server_heartbeat": 60,
+    "client_timeout_server": 180,
+    "manage_all_formats": false,
+    "openssl_cipher_suites": "ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384",
+    "openssl_cipher_suites_custom": "",
+    "openssl_cipher_suites_selection": "defaults",
+    "openssl_context_options": "0x17134000",
+    "openssl_context_options_custom": "",
+    "openssl_context_options_selection": "defaults",
+    "realm_is_secure": false,
+    "server_client_heartbeat": 60,
+    "server_timeout_client": 3600,
+    "warn_about_insecure_transports": false,
+    "max_deployment_history": 25
+  },
+  "applications": [
+    {
+      "last_modified": "2017-08-31T18:03:31.547819248+01:00",
+      "last_modified_millis": 1504199011547,
+      "last_modified_by": "ftl",
+      "name": "default",
+      "id": 201,
+      "description": "",
+      "manage_all_formats": false,
+      "preload_format_names": [],
+      "endpoints": [
+        {
+          "name": "default",
+          "id": 202
+        }
+      ],
+      "instances": [
+        {
+          "name": "default",
+          "id": 203,
+          "description": "",
+          "matcher": {
+            "host": "",
+            "identifier": ""
+          },
+          "endpoints": [
+            {
+              "dynamic_durable": {},
+              "subscribers": [],
+              "list_name": "_default_@_default_@_default",
+              "endpoint_name": "default"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "last_modified": "2017-08-31T18:03:31.547819248+01:00",
+      "last_modified_millis": 1504199011547,
+      "last_modified_by": "ftl",
+      "name": "_GroupClient",
+      "id": 1041,
+      "description": "",
+      "manage_all_formats": false,
+      "preload_format_names": [],
+      "endpoints": [
+        {
+          "name": "_Common",
+          "id": 1043
+        }
+      ],
+      "instances": [
+        {
+          "name": "default",
+          "id": 1039,
+          "description": "",
+          "matcher": {
+            "host": "",
+            "identifier": ""
+          },
+          "endpoints": [
+            {
+              "dynamic_durable": {},
+              "subscribers": [],
+              "list_name": "__GroupClient_@_default_@__Common",
+              "endpoint_name": "_Common"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "last_modified": "2017-08-31T18:03:31.547819248+01:00",
+      "last_modified_millis": 1504199011547,
+      "last_modified_by": "ftl",
+      "name": "_GroupServer",
+      "id": 1047,
+      "description": "",
+      "manage_all_formats": false,
+      "preload_format_names": [],
+      "endpoints": [
+        {
+          "name": "_Common",
+          "id": 1049
+        }
+      ],
+      "instances": [
+        {
+          "name": "PrimaryGroupServer",
+          "id": 1051,
+          "description": "",
+          "matcher": {
+            "host": "",
+            "identifier": "Primary"
+          },
+          "endpoints": [
+            {
+              "dynamic_durable": {},
+              "subscribers": [],
+              "list_name": "__GroupServer_@_PrimaryGroupServer_@__Common",
+              "endpoint_name": "_Common"
+            }
+          ]
+        },
+        {
+          "name": "BackupGroupServer",
+          "id": 1053,
+          "description": "",
+          "matcher": {
+            "host": "",
+            "identifier": "Backup"
+          },
+          "endpoints": [
+            {
+              "dynamic_durable": {},
+              "subscribers": [],
+              "list_name": "__GroupServer_@_BackupGroupServer_@__Common",
+              "endpoint_name": "_Common"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "last_modified": "2017-09-01T11:20:54.135865961+01:00",
+      "last_modified_millis": 1504261254135,
+      "last_modified_by": "anyone",
+      "name": "PatternsDemoApplicationA",
+      "id": 1041,
+      "description": "",
+      "manage_all_formats": false,
+      "preload_format_names": [
+        "BasicMessage"
+      ],
+      "endpoints": [
+        {
+          "name": "ApplicationAEP",
+          "id": 1045
+        }
+      ],
+      "instances": [
+        {
+          "name": "default",
+          "id": 1043,
+          "description": "",
+          "matcher": {
+            "host": "",
+            "identifier": ""
+          },
+          "endpoints": [
+            {
+              "dynamic_durable": {},
+              "subscribers": [],
+              "list_name": "_PatternsDemoApplicationA_@_default_@_ApplicationAEP",
+              "endpoint_name": "ApplicationAEP"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "last_modified": "2017-09-01T12:00:33.375072086+01:00",
+      "last_modified_millis": 1504263633375,
+      "last_modified_by": "anyone",
+      "name": "PatternsDemoApplicationB",
+      "id": 1047,
+      "description": "",
+      "manage_all_formats": false,
+      "preload_format_names": [
+        "BasicMessage"
+      ],
+      "endpoints": [
+        {
+          "name": "ApplicationBEP",
+          "id": 1051
+        }
+      ],
+      "instances": [
+        {
+          "name": "default",
+          "id": 1049,
+          "description": "",
+          "matcher": {
+            "host": "",
+            "identifier": ""
+          },
+          "endpoints": [
+            {
+              "dynamic_durable": {},
+              "subscribers": [],
+              "list_name": "_PatternsDemoApplicationB_@_default_@_ApplicationBEP",
+              "endpoint_name": "ApplicationBEP"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "clusters": [],
+  "eftl_clusters": [],
+  "formats": [
+    {
+      "last_modified": "0001-01-01T00:00:00Z",
+      "last_modified_millis": 0,
+      "last_modified_by": "",
+      "name": "BasicMessage",
+      "id": 1035,
+      "description": "",
+      "fields": [
+        {
+          "name": "Message",
+          "type": "string",
+          "size": 0
+        }
+      ]
+    }
+  ],
+  "transports": [
+    {
+      "last_modified": "2017-08-31T18:03:31.547819248+01:00",
+      "last_modified_millis": 1504199011547,
+      "last_modified_by": "ftl",
+      "name": "_GroupClientTport",
+      "description": "",
+      "relationships": [
+        {
+          "transport": "_GroupServerTport1"
+        }
+      ],
+      "id": 1027,
+      "config": {
+        "transport_type": "dtcp",
+        "backlog_full_wait": "0",
+        "recv_spin_limit": "0",
+        "backlog_size": "64mb",
+        "port": "0",
+        "subnet_mask": "",
+        "virtual_name": "_Primary_Group_Server_VName",
+        "mode": "client"
+      }
+    },
+    {
+      "last_modified": "2017-08-31T18:03:31.547819248+01:00",
+      "last_modified_millis": 1504199011547,
+      "last_modified_by": "ftl",
+      "name": "_GroupClientTport2",
+      "description": "",
+      "relationships": [
+        {
+          "transport": "_GroupServerTport2"
+        }
+      ],
+      "id": 1031,
+      "config": {
+        "transport_type": "dtcp",
+        "backlog_full_wait": "0",
+        "recv_spin_limit": "0",
+        "backlog_size": "64mb",
+        "port": "0",
+        "subnet_mask": "",
+        "virtual_name": "_Backup_Group_server_VName",
+        "mode": "client"
+      }
+    },
+    {
+      "last_modified": "2017-08-31T18:03:31.547819248+01:00",
+      "last_modified_millis": 1504199011547,
+      "last_modified_by": "ftl",
+      "name": "_GroupServerTport1",
+      "description": "",
+      "relationships": [
+        {
+          "transport": "_GroupClientTport"
+        }
+      ],
+      "id": 1025,
+      "config": {
+        "transport_type": "dtcp",
+        "backlog_full_wait": "0",
+        "recv_spin_limit": "0",
+        "backlog_size": "64mb",
+        "port": "0",
+        "subnet_mask": "",
+        "virtual_name": "_Primary_Group_Server_VName",
+        "mode": "server"
+      }
+    },
+    {
+      "last_modified": "2017-08-31T18:03:31.547819248+01:00",
+      "last_modified_millis": 1504199011547,
+      "last_modified_by": "ftl",
+      "name": "_GroupServerTport2",
+      "description": "",
+      "relationships": [
+        {
+          "transport": "_GroupClientTport2"
+        }
+      ],
+      "id": 1029,
+      "config": {
+        "transport_type": "dtcp",
+        "backlog_full_wait": "0",
+        "recv_spin_limit": "0",
+        "backlog_size": "64mb",
+        "port": "0",
+        "subnet_mask": "",
+        "virtual_name": "_Backup_Group_server_VName",
+        "mode": "server"
+      }
+    },
+    {
+      "last_modified": "2017-08-31T18:03:31.547819248+01:00",
+      "last_modified_millis": 1504199011547,
+      "last_modified_by": "ftl",
+      "name": "default",
+      "description": "",
+      "relationships": [],
+      "id": 204,
+      "config": {
+        "transport_type": "dtcp",
+        "backlog_full_wait": "0",
+        "recv_spin_limit": "0.01",
+        "backlog_size": "64mb",
+        "port": "0",
+        "subnet_mask": "",
+        "mode": ""
+      }
+    }
+  ],
+  "connector_lists": [
+    {
+      "name": "_default_@_default_@_default",
+      "id": 204,
+      "description": "",
+      "connectors": [
+        {
+          "transport": "default",
+          "receive": true,
+          "receive_inbox": true,
+          "send": true,
+          "send_inbox": true
+        }
+      ]
+    },
+    {
+      "name": "__GroupClient_@_default_@__Common",
+      "id": 16025,
+      "description": "",
+      "connectors": [
+        {
+          "transport": "_GroupClientTport2",
+          "receive": true,
+          "receive_inbox": true,
+          "send": true,
+          "send_inbox": true
+        },
+        {
+          "transport": "_GroupClientTport",
+          "receive": true,
+          "receive_inbox": true,
+          "send": true,
+          "send_inbox": true
+        }
+      ]
+    },
+    {
+      "name": "__GroupServer_@_PrimaryGroupServer_@__Common",
+      "id": 16027,
+      "description": "",
+      "connectors": [
+        {
+          "transport": "_GroupServerTport1",
+          "receive": true,
+          "receive_inbox": true,
+          "send": true,
+          "send_inbox": true
+        }
+      ]
+    },
+    {
+      "name": "__GroupServer_@_BackupGroupServer_@__Common",
+      "id": 16029,
+      "description": "",
+      "connectors": [
+        {
+          "transport": "_GroupServerTport2",
+          "receive": true,
+          "receive_inbox": true,
+          "send": true,
+          "send_inbox": true
+        },
+        {
+          "transport": "_GroupClientTport",
+          "receive": true,
+          "receive_inbox": true,
+          "send": true,
+          "send_inbox": true
+        }
+      ]
+    },
+    {
+      "name": "_PatternsDemoApplicationA_@_default_@_ApplicationAEP",
+      "id": 0,
+      "description": "",
+      "connectors": [
+        {
+          "transport": "default",
+          "receive": true,
+          "receive_inbox": true,
+          "send": true,
+          "send_inbox": true
+        }
+      ]
+    },
+    {
+      "name": "_PatternsDemoApplicationB_@_default_@_ApplicationBEP",
+      "id": 0,
+      "description": "",
+      "connectors": [
+        {
+          "transport": "default",
+          "receive": true,
+          "receive_inbox": true,
+          "send": true,
+          "send_inbox": true
+        }
+      ]
+    }
+  ],
+  "product_data": {}
+}
